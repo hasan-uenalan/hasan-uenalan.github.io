@@ -85,6 +85,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  margin-top: 15px
 }
 
 /* PHP Email Form Messages
@@ -528,7 +529,7 @@ section,
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 10px;
-  padding-top: 15px;
+  padding-top: 40px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -734,7 +735,7 @@ section,
   color: var(--heading-color);
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
