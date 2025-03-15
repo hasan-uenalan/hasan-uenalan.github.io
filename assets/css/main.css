@@ -1304,9 +1304,10 @@ section,
 
 .image img {
   max-width: 100%; /* Ensures the image is responsive */
+  min-width: 250px;
   height: auto;
   width: 100%; /* Makes the image responsive, scaling it to the container's width */
-  max-width: 200px; /* Max width to set a predefined scale */
+  max-width: 250px; /* Max width to set a predefined scale */
 }
 
 .inner {
