@@ -1291,25 +1291,27 @@ section,
 # Portfolio 
 --------------------------------------------------------------*/
 
+/* Default styles for larger screens */
 .image-text-wrapper {
   display: flex;
   align-items: flex-start; /* Aligns the image and text to the top */
+  gap: 20px; /* Adds space between the image and the text */
 }
 
+/* Image styling */
 .image {
   flex-shrink: 0; /* Prevents image from shrinking */
-  margin-right: 20px; /* Space between the image and text */
-
 }
 
 .image img {
   max-width: 100%; /* Ensures the image is responsive */
-  min-width: 250px;
+  min-width: 250px; /* Set a min-width for the image */
   height: auto;
-  width: 100%; /* Makes the image responsive, scaling it to the container's width */
-  max-width: 250px; /* Max width to set a predefined scale */
+  width: 100%; /* Makes the image responsive */
+  max-width: 250px; /* Limit the image size */
 }
 
+/* Title and icons styling */
 .inner h3 {
   display: flex;
   justify-content: space-between; /* Positions the text to the left and icons to the right */
@@ -1321,10 +1323,12 @@ section,
   padding-left: 5px;
 }
 
+/* Inner content layout (text) */
 .inner {
   flex-grow: 1; /* Ensures the text takes up remaining space */
 }
 
+/* Box margins */
 .box {
   margin-bottom: 30px;
 }
@@ -1336,4 +1340,34 @@ section,
 .smallmargin {
   margin-top: 16px;
   margin-bottom: 5px;
+}
+
+/* Space adjustment between the header text and icons */
+.inner h3 .icons-container {
+  display: flex;
+  gap: 10px; /* Adds space between the icons */
+  margin-left: auto; /* Align the icons to the right */
+}
+
+/* Media Query for smaller screens (below 768px) */
+@media (max-width: 768px) {
+  .image-text-wrapper {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: flex-start; /* Align the items to the start */
+  }
+
+  .image {
+    margin-right: 0; /* Removes margin on smaller screens */
+    margin-bottom: 15px; /* Adds space between image and text */
+  }
+
+  .inner h3 {
+    justify-content: flex-start; /* Aligns the title and icons in a line on smaller screens */
+    width: 100%; /* Ensures title takes full width */
+    padding-right: 0; /* Remove padding on smaller screens if needed */
+  }
+
+  .small-padding-left {
+    padding-left: 10px; /* Adjusts space between icons */
+  }
 }
